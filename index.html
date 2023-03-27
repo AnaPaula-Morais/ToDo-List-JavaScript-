@@ -5,15 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
+    <style>
+        table, th, td,tbody {
+            border:1px solid black;
+        }
+    </style>
+    
 </head>
 <body>
     <h1>ToDo List</h1>
     <input id="incluirTarefa" name="incluirTarefa" type="text">
     <button id="enviar" value="enviar" type="button" onclick="enviar()">Enviar</button>
-    
+    <br><br><br>
     <!--essa div serve para add as tarefas-->
     <div id="tarefas">
-        
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+    <!--O marcador <TBODY></TBODY> "Table Body Element" é o espaço onde são colocadas as linhas dos detalhes, de dados, em uma tabela HTML, é indicação para o navegador que essas linhas aparecerão depois das células contidas na tag <THEAD></THEAD>-->
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
     </div>
    
 
